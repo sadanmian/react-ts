@@ -1,17 +1,15 @@
-import { Greet } from "./components/Greet";
-import { Heading } from "./components/Heading";
-import { Oscar } from "./components/Oscar";
-import { Status } from "./components/Status";
+import { Button } from "./components/Button";
+import { Input } from "./components/Input";
 
 function App() {
   return (
     <div>
-      <Status status="success" />
-      <Heading>Placeholder text</Heading>
-      <Oscar>
-        <Heading>Oscar goes to Sadan</Heading>
-      </Oscar>
-      <Greet name="Sadan" isLoggedIn={true} />
+      <Button
+        handleClick={(event, id) => {
+          console.log("button clicked", event, id);
+        }}
+      />
+      <Input value="" handleChange={(event) => console.log(event)} />
     </div>
   );
 }
