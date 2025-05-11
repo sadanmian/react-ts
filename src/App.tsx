@@ -1,12 +1,10 @@
-import User from "./components/context/User";
-import { UserContextProvider } from "./components/context/UserContext";
+import Private from "./components/auth/Private";
+import Profile from "./components/auth/Profile";
 
 function App() {
   return (
     <div>
-      <UserContextProvider>
-        <User />
-      </UserContextProvider>
+      <Private isLoggedIn={true} component={Profile} />
     </div>
   );
 }
