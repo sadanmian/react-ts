@@ -1,9 +1,10 @@
 import Container from "./components/Container";
+import LoggedIn from "./components/state/LoggedIn";
 
 function App() {
   return (
     <div>
-      <Container styles={{ border: "1px solid pink", padding: "2rem" }} />
+      <LoggedIn />
     </div>
   );
 }
