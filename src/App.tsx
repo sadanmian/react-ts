@@ -1,11 +1,9 @@
-import Container from "./components/Container";
-import LoggedIn from "./components/state/LoggedIn";
-import User from "./components/state/User";
+import { Counter } from "./components/state/Counter";
 
 function App() {
   return (
     <div>
-      <User />
+      <Counter />
     </div>
   );
 }
